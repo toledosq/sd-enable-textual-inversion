@@ -27,6 +27,7 @@ One thing I have noticed when I tried training is that it resizes the image to 5
 
 For training see:
 [rinongal/textual_inversion](https://github.com/rinongal/textual_inversion)
+
 [nicolai256/Stable-textual-inversion_win](https://github.com/nicolai256/Stable-textual-inversion_win)
 
 Please note: training uses a HUGE amount of vram, you will struggle to get it working on <12gb vram, I have but only by changing the size: 512 to size: 448 in this section of v1-finetune or lowmemory version: 
