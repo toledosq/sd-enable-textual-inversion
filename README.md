@@ -7,11 +7,11 @@ any problems create an issue please
 
 [textual-inversion](https://textual-inversion.github.io/) - An Image is Worth One Word: Personalizing Text-to-Image Generation using Textual Inversion (credit: Tel Aviv University, NVIDIA)
 
-!()[https://textual-inversion.github.io/static/images/editing/teaser.JPG]
+![](https://textual-inversion.github.io/static/images/editing/teaser.JPG)
 
 We learn to generate specific concepts, like personal objects or artistic styles, by describing them using new "words" in the embedding space of pre-trained text-to-image models. These can be used in new sentences, just like any other word.
 
-!()[https://textual-inversion.github.io/static/images/editing/puppet.JPG]
+![](https://textual-inversion.github.io/static/images/editing/puppet.JPG)
 
 You need to train embeddings then use the embedding file
 
