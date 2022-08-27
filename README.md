@@ -26,6 +26,7 @@ One thing I have noticed when I tried training is that it resizes the image to 5
 ![00184](https://user-images.githubusercontent.com/106811348/187011743-a4abd08e-2383-4207-95f5-c60f6d3183ba.png)
 
 For training see:
+
 [rinongal/textual_inversion](https://github.com/rinongal/textual_inversion)
 
 [nicolai256/Stable-textual-inversion_win](https://github.com/nicolai256/Stable-textual-inversion_win)
