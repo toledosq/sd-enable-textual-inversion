@@ -1,7 +1,7 @@
 # sd-enable-textual-inversion
 Copy these files to your stable-diffusion to enable text-inversion
 
-any problems create an issue please
+any problems create an issue [here](https://github.com/hlky/stable-diffusion-webui) please
 
 # You don't upload an image, that's not how it works
 
