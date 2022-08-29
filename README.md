@@ -32,6 +32,8 @@ Examples from the paper:
 
 # How to Train Textual-Inversion
 
+** Training is best done by using the [original repo](https://github.com/rinongal/textual_inversion) **
+
 **Note that these instructions are for training on your local device, instructions may vary for training in Colab.**
 
 You will need 3-5 images of what you want the model to describe. You can use more images, but the paper recommends 5. For the best results, the images should be visually similar, and each image should be cropped to 512x512. Any other sizes will be rescaled (stretched) and may produce strange results.
