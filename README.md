@@ -50,7 +50,7 @@ Place 3-5 images of the object/artstyle/scene/etc. into an empty folder.
 `python main.py 
   --base configs/stable-diffusion/v1-finetune.yaml 
   -t 
-  --actual_resume models/ldm/text2img-large/model.ckpt
+  --actual_resume models/ldm/stable-diffusion-v1/model.ckpt
   -n <name this run>
   --data_root path/to/image/folder
   --gpus 1
@@ -58,11 +58,11 @@ Place 3-5 images of the object/artstyle/scene/etc. into an empty folder.
   
   > --base points the script at the training configuration file
   
-  > --actual_resume points the script at the Textual-Inversion model
+  > --actual_resume points the script at the Stable-Diffusion model
 
   > --n gives the training run a name, which will also be used as the output folder name.
   
-  > --gpus tells the script how many CUDA-enabled GPUs you want to use. Leave at 1 unless you know what you're doing.
+  > --gpus Leave at 1 unless you know what you're doing.
   
   > --init-word is a single word the model will start with when looking at your images for the first time. Should be simple, ie: "sculpture", "girl", "mountains"
 
@@ -157,7 +157,9 @@ Comment these lines out, then below them add `ngpu = 1`. Make sure that it is at
 
 **A:** There are two known reasons for shape errors:
 
-- The sanity check is failing when starting Textual-Inversion training. Try leaving out the `--actual-resume` argument when launching main.py. Chances are, the next error you receive will be an Out of Memory Error. See earlier in the FAQ for that.
-- Stable Diffusion is erroring out when you try to use an embeddings file. This is likely because you ran the Textual-Inversion training with the wrong configuration. As of writing, TI and SD are not integrated. Make sure you have downloaded the `config/v1-finetune.yaml` file from this repo and that you use `--base configs/stable-diffusion/v1-finetune.yaml` when training embeddings. Retrain and try again.
+- The sanity check is failing when starting Textual-Inversion training. 
+- Stable Diffusion is erroring out when you try to use an embeddings file. 
+
+Either one is likely because you ran the Textual-Inversion training with the wrong configuration. As of writing, TI and SD are not integrated, so there is little in the way of support here. They are working on integration. For now, make sure you have downloaded the `config/v1-finetune.yaml` file from this repo and that you use `--base configs/stable-diffusion/v1-finetune.yaml` when training embeddings. Also make sure that are pointing `--actual-resume` at the stable-diffusion model.ckpt. Retrain and try again.
 
 <br>
